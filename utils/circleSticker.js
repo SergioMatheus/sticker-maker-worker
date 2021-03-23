@@ -27,7 +27,7 @@ async function circleSticker({ decryptFile, message }) {
     .webp({ quality: 80 })
     .toBuffer()
     .then(async (info) => {
-      console.log("Foto Convertida e comprimida com sucesso");
+      console.log("Foto Circular enviada para: " + message.chat.id);
       return { message_from: message.chat.id, image64: info.toString('base64') }
     })
     .catch(async (err) => {

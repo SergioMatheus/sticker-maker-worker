@@ -31,6 +31,7 @@ async function translucentStickerWithoutUrl({ decryptFile, message }) {
         await jimpObject.getBase64(Jimp.MIME_PNG, (err, res) => {
           base64 = res;
         });
+        console.log("Foto Transparente Enviada para: " + message.chat.id);
         return { message_from: message.chat.id, image64: base64 };
       });
     })
