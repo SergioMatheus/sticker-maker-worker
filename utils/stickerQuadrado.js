@@ -1,6 +1,6 @@
 const sharp = require("sharp");
 
-async function squaredSticker({ decryptFile, message }) {
+async function stickerQuadrado({ decryptFile, message }) {
   return sharp(new Buffer.from(decryptFile.data))
     .resize({
       width: 512,
@@ -31,4 +31,4 @@ async function squaredSticker({ decryptFile, message }) {
       };
     });
 }
-exports.squaredSticker = squaredSticker;
+exports.stickerQuadrado = stickerQuadrado;

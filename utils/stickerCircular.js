@@ -1,6 +1,6 @@
 const sharp = require("sharp");
 
-async function circleSticker({ decryptFile, message }) {
+async function stickerCircular({ decryptFile, message }) {
   const width = 460,
     r = width / 2,
     circleShape = Buffer.from(
@@ -38,4 +38,4 @@ async function circleSticker({ decryptFile, message }) {
       }
     });
 }
-exports.circleSticker = circleSticker;
+exports.stickerCircular = stickerCircular;

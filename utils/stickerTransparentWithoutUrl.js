@@ -2,7 +2,7 @@ const sharp = require("sharp");
 const replaceColor = require("replace-color");
 const Jimp = require("jimp");
 
-async function translucentStickerWithoutUrl({ decryptFile, message }) {
+async function stickerTransparentWithoutUrl({ decryptFile, message }) {
   sharp.cache(false);
   return sharp(new Buffer.from(decryptFile.data))
     .resize({
@@ -44,4 +44,4 @@ async function translucentStickerWithoutUrl({ decryptFile, message }) {
       };
     });
 }
-exports.translucentStickerWithoutUrl = translucentStickerWithoutUrl;
+exports.stickerTransparentWithoutUrl = stickerTransparentWithoutUrl;
