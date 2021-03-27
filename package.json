@@ -15,6 +15,7 @@
     "giflossy": "^3.0.41",
     "gifsicle": "^5.1.0",
     "jimp": "^0.16.1",
+    "p-queue": "^6.6.2",
     "replace-color": "^2.3.0",
     "sharp": "^0.27.0",
     "text2png": "git://github.com/SergioMatheus/text2png"
